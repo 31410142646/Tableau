@@ -1,0 +1,2839 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.25.1210.1815                               -->
+<workbook original-version='18.1' source-build='2025.3.1 (20253.25.1210.1815)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.IndividualControlFormatting.true...IndividualControlFormatting />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <NavigationAction />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='ncr_ride_bookings' inline='true' name='federated.0jqvo261eamfqp144j6ee0cl2hm9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ncr_ride_bookings' name='textscan.1js7itu03jy9pp13ggngg01kvb0s'>
+            <connection class='textscan' directory='C:/Users/Prathamesh/Downloads/Data_science/projects' filename='ncr_ride_bookings.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1js7itu03jy9pp13ggngg01kvb0s' name='ncr_ride_bookings.csv' table='[ncr_ride_bookings#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='datetime' name='Time' ordinal='1' />
+            <column datatype='string' name='Booking ID' ordinal='2' />
+            <column datatype='string' name='Booking Status' ordinal='3' />
+            <column datatype='string' name='Customer ID' ordinal='4' />
+            <column datatype='string' name='Vehicle Type' ordinal='5' />
+            <column datatype='string' name='Pickup Location' ordinal='6' />
+            <column datatype='string' name='Drop Location' ordinal='7' />
+            <column datatype='real' name='Avg VTAT' ordinal='8' />
+            <column datatype='real' name='Avg CTAT' ordinal='9' />
+            <column datatype='integer' name='Cancelled Rides by Customer' ordinal='10' />
+            <column datatype='string' name='Reason for cancelling by Customer' ordinal='11' />
+            <column datatype='integer' name='Cancelled Rides by Driver' ordinal='12' />
+            <column datatype='string' name='Driver Cancellation Reason' ordinal='13' />
+            <column datatype='integer' name='Incomplete Rides' ordinal='14' />
+            <column datatype='string' name='Incomplete Rides Reason' ordinal='15' />
+            <column datatype='integer' name='Booking Value' ordinal='16' />
+            <column datatype='real' name='Ride Distance' ordinal='17' />
+            <column datatype='real' name='Driver Ratings' ordinal='18' />
+            <column datatype='real' name='Customer Rating' ordinal='19' />
+            <column datatype='string' name='Payment Method' ordinal='20' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ncr_ride_bookings.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[ncr_ride_bookings.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[Time]</local-name>
+            <parent-name>[ncr_ride_bookings.csv]</parent-name>
+            <remote-alias>Time</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Booking ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Booking ID]</local-name>
+            <parent-name>[ncr_ride_bookings.csv]</parent-name>
+            <remote-alias>Booking ID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Booking Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Booking Status]</local-name>
+            <parent-name>[ncr_ride_bookings.csv]</parent-name>
+            <remote-alias>Booking Status</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer ID]</local-name>
+            <parent-name>[ncr_ride_bookings.csv]</parent-name>
+            <remote-alias>Customer ID</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Vehicle Type]</local-name>
+            <parent-name>[ncr_ride_bookings.csv]</parent-name>
+            <remote-alias>Vehicle Type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pickup Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pickup Location]</local-name>
+            <parent-name>[ncr_ride_bookings.csv]</parent-name>
+            <remote-alias>Pickup Location</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Drop Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Drop Location]</local-name>
+            <parent-name>[ncr_ride_bookings.csv]</parent-name>
+            <remote-alias>Drop Location</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg VTAT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg VTAT]</local-name>
+            <parent-name>[ncr_ride_bookings.csv]</parent-name>
+            <remote-alias>Avg VTAT</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg CTAT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg CTAT]</local-name>
+            <parent-name>[ncr_ride_bookings.csv]</parent-name>
+            <remote-alias>Avg CTAT</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cancelled Rides by Customer</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cancelled Rides by Customer]</local-name>
+            <parent-name>[ncr_ride_bookings.csv]</parent-name>
+            <remote-alias>Cancelled Rides by Customer</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reason for cancelling by Customer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Reason for cancelling by Customer]</local-name>
+            <parent-name>[ncr_ride_bookings.csv]</parent-name>
+            <remote-alias>Reason for cancelling by Customer</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cancelled Rides by Driver</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cancelled Rides by Driver]</local-name>
+            <parent-name>[ncr_ride_bookings.csv]</parent-name>
+            <remote-alias>Cancelled Rides by Driver</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Driver Cancellation Reason</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Driver Cancellation Reason]</local-name>
+            <parent-name>[ncr_ride_bookings.csv]</parent-name>
+            <remote-alias>Driver Cancellation Reason</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Incomplete Rides</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Incomplete Rides]</local-name>
+            <parent-name>[ncr_ride_bookings.csv]</parent-name>
+            <remote-alias>Incomplete Rides</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Incomplete Rides Reason</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Incomplete Rides Reason]</local-name>
+            <parent-name>[ncr_ride_bookings.csv]</parent-name>
+            <remote-alias>Incomplete Rides Reason</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Booking Value</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Booking Value]</local-name>
+            <parent-name>[ncr_ride_bookings.csv]</parent-name>
+            <remote-alias>Booking Value</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ride Distance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Ride Distance]</local-name>
+            <parent-name>[ncr_ride_bookings.csv]</parent-name>
+            <remote-alias>Ride Distance</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Driver Ratings</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Driver Ratings]</local-name>
+            <parent-name>[ncr_ride_bookings.csv]</parent-name>
+            <remote-alias>Driver Ratings</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Customer Rating]</local-name>
+            <parent-name>[ncr_ride_bookings.csv]</parent-name>
+            <remote-alias>Customer Rating</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Payment Method</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Payment Method]</local-name>
+            <parent-name>[ncr_ride_bookings.csv]</parent-name>
+            <remote-alias>Payment Method</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Booking Status (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Booking Status]' new-bin='true' />
+      </column>
+      <column datatype='string' name='[Booking Status]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Calculation1]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ZN(COUNTD([Booking Status])) - LOOKUP(ZN(COUNTD([Booking Status])), -1)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='real' default-format='p0.00%' name='[Calculation2]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([Booking Status]) / TOTAL(COUNT([Booking Status]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='real' default-format='p0.00%' name='[Calculation3]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Incomplete Rides]) / TOTAL(SUM([Incomplete Rides]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='string' name='[Drop Location]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <column datatype='string' name='[Pickup Location]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column aggregation='Hour' datatype='datetime' name='[Time]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Vehicle Type]' role='dimension' type='nominal' />
+      <column caption='ncr_ride_bookings.csv' datatype='table' name='[__tableau_internal_object_id__].[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]' role='measure' type='quantitative' />
+      <column-instance column='[Vehicle Type]' derivation='None' name='[none:Vehicle Type:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/PRATHA~1/AppData/Local/Temp/TableauTemp/#TableauTemp_042d0q513xetzd189jz9f1x4gknb.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/28/2026 05:47:12 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>ncr_ride_bookings.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>984</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Time</remote-name>
+              <remote-type>134</remote-type>
+              <local-name>[Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Time</remote-alias>
+              <ordinal>1</ordinal>
+              <family>ncr_ride_bookings.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Hour</aggregation>
+              <approx-count>78055</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Booking ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Booking ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Booking ID</remote-alias>
+              <ordinal>2</ordinal>
+              <family>ncr_ride_bookings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>150000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Booking Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Booking Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Booking Status</remote-alias>
+              <ordinal>3</ordinal>
+              <family>ncr_ride_bookings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer ID</remote-alias>
+              <ordinal>4</ordinal>
+              <family>ncr_ride_bookings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>150000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vehicle Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Vehicle Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Vehicle Type</remote-alias>
+              <ordinal>5</ordinal>
+              <family>ncr_ride_bookings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pickup Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Pickup Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pickup Location</remote-alias>
+              <ordinal>6</ordinal>
+              <family>ncr_ride_bookings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>195</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Drop Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Drop Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Drop Location</remote-alias>
+              <ordinal>7</ordinal>
+              <family>ncr_ride_bookings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>230</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Avg VTAT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Avg VTAT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Avg VTAT</remote-alias>
+              <ordinal>8</ordinal>
+              <family>ncr_ride_bookings.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>274</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Avg CTAT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Avg CTAT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Avg CTAT</remote-alias>
+              <ordinal>9</ordinal>
+              <family>ncr_ride_bookings.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1127</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cancelled Rides by Customer</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Cancelled Rides by Customer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cancelled Rides by Customer</remote-alias>
+              <ordinal>10</ordinal>
+              <family>ncr_ride_bookings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Reason for cancelling by Customer</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Reason for cancelling by Customer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Reason for cancelling by Customer</remote-alias>
+              <ordinal>11</ordinal>
+              <family>ncr_ride_bookings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cancelled Rides by Driver</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Cancelled Rides by Driver]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cancelled Rides by Driver</remote-alias>
+              <ordinal>12</ordinal>
+              <family>ncr_ride_bookings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Driver Cancellation Reason</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Driver Cancellation Reason]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Driver Cancellation Reason</remote-alias>
+              <ordinal>13</ordinal>
+              <family>ncr_ride_bookings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Incomplete Rides</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Incomplete Rides]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Incomplete Rides</remote-alias>
+              <ordinal>14</ordinal>
+              <family>ncr_ride_bookings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Incomplete Rides Reason</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Incomplete Rides Reason]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Incomplete Rides Reason</remote-alias>
+              <ordinal>15</ordinal>
+              <family>ncr_ride_bookings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Booking Value</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Booking Value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Booking Value</remote-alias>
+              <ordinal>16</ordinal>
+              <family>ncr_ride_bookings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5717</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ride Distance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Ride Distance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ride Distance</remote-alias>
+              <ordinal>17</ordinal>
+              <family>ncr_ride_bookings.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21185</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Driver Ratings</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Driver Ratings]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Driver Ratings</remote-alias>
+              <ordinal>18</ordinal>
+              <family>ncr_ride_bookings.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer Rating</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Customer Rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer Rating</remote-alias>
+              <ordinal>19</ordinal>
+              <family>ncr_ride_bookings.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Payment Method</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Payment Method]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Payment Method</remote-alias>
+              <ordinal>20</ordinal>
+              <family>ncr_ride_bookings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Vehicle Type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Auto&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Go Sedan&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Go Mini&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Uber XL&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;eBike&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Premier Sedan&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Bike&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='ncr_ride_bookings.csv' id='ncr_ride_bookings.csv_D5DE904C8C914C8A90D8E5B6088224D2'>
+            <properties context=''>
+              <relation connection='textscan.1js7itu03jy9pp13ggngg01kvb0s' name='ncr_ride_bookings.csv' table='[ncr_ride_bookings#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='datetime' name='Time' ordinal='1' />
+                  <column datatype='string' name='Booking ID' ordinal='2' />
+                  <column datatype='string' name='Booking Status' ordinal='3' />
+                  <column datatype='string' name='Customer ID' ordinal='4' />
+                  <column datatype='string' name='Vehicle Type' ordinal='5' />
+                  <column datatype='string' name='Pickup Location' ordinal='6' />
+                  <column datatype='string' name='Drop Location' ordinal='7' />
+                  <column datatype='real' name='Avg VTAT' ordinal='8' />
+                  <column datatype='real' name='Avg CTAT' ordinal='9' />
+                  <column datatype='integer' name='Cancelled Rides by Customer' ordinal='10' />
+                  <column datatype='string' name='Reason for cancelling by Customer' ordinal='11' />
+                  <column datatype='integer' name='Cancelled Rides by Driver' ordinal='12' />
+                  <column datatype='string' name='Driver Cancellation Reason' ordinal='13' />
+                  <column datatype='integer' name='Incomplete Rides' ordinal='14' />
+                  <column datatype='string' name='Incomplete Rides Reason' ordinal='15' />
+                  <column datatype='integer' name='Booking Value' ordinal='16' />
+                  <column datatype='real' name='Ride Distance' ordinal='17' />
+                  <column datatype='real' name='Driver Ratings' ordinal='18' />
+                  <column datatype='real' name='Customer Rating' ordinal='19' />
+                  <column datatype='string' name='Payment Method' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight1' name='[Action2_A602C7F1FF8E4C39930B82C13DB7076F]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Count of Bookings According Vehicle' />
+      <command command='tsc:brush'>
+        <param name='special-fields' value='date-time' />
+        <param name='target' value='Count of Bookings According Vehicle' />
+      </command>
+    </action>
+    <nav-action caption='GoToSheet1' name='[Action1_A676F8C7521541B9965B7EB2A1273D26]'>
+      <activation type='on-select' />
+      <source type='sheet' worksheet='Count of Bookings According Vehicle' />
+      <params>
+        <param name='sheet' value='Booking Value According Vehicle' />
+      </params>
+    </nav-action>
+  </actions>
+  <worksheets>
+    <worksheet name='Avg Customer Ratings'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000' fontsize='10'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ncr_ride_bookings' name='federated.0jqvo261eamfqp144j6ee0cl2hm9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0jqvo261eamfqp144j6ee0cl2hm9'>
+            <column datatype='real' name='[Customer Rating]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Vehicle Type]' role='dimension' type='nominal' />
+            <column-instance column='[Customer Rating]' derivation='Avg' name='[avg:Customer Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Vehicle Type]' derivation='None' name='[none:Vehicle Type:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Vehicle Type:nk]' member='&quot;Premier Sedan&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='quick-filter'>
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]' value='#333333' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='quick-filter-title'>
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]' value='#666666' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[avg:Customer Rating:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{EF3117D0-B344-4257-B8FA-ECECA11A4189}' />
+    </worksheet>
+    <worksheet name='Avg Driver Ratings'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000' fontsize='10'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ncr_ride_bookings' name='federated.0jqvo261eamfqp144j6ee0cl2hm9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0jqvo261eamfqp144j6ee0cl2hm9'>
+            <column datatype='real' name='[Driver Ratings]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Vehicle Type]' role='dimension' type='nominal' />
+            <column-instance column='[Driver Ratings]' derivation='Avg' name='[avg:Driver Ratings:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Vehicle Type]' derivation='None' name='[none:Vehicle Type:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Vehicle Type:nk]' member='&quot;Premier Sedan&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='quick-filter'>
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]' value='#333333' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='quick-filter-title'>
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]' value='#666666' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[avg:Driver Ratings:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{64F991A5-92B8-46CF-A926-63432A6B2F5B}' />
+    </worksheet>
+    <worksheet name='Booking Status Breakdown'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ncr_ride_bookings' name='federated.0jqvo261eamfqp144j6ee0cl2hm9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0jqvo261eamfqp144j6ee0cl2hm9'>
+            <column datatype='string' name='[Booking Status]' role='dimension' type='nominal' />
+            <column-instance column='[Booking Status]' derivation='None' name='[none:Booking Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Booking Status]' derivation='Count' name='[pcto:cnt:Booking Status:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Booking Status:nk]' />
+              <text column='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[pcto:cnt:Booking Status:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{23C13DC0-D95A-4F9C-A7C5-636DFD7133C1}' />
+    </worksheet>
+    <worksheet name='Booking Value According Vehicle'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ncr_ride_bookings' name='federated.0jqvo261eamfqp144j6ee0cl2hm9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0jqvo261eamfqp144j6ee0cl2hm9'>
+            <column datatype='integer' name='[Booking Value]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Ride Distance]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Vehicle Type]' role='dimension' type='nominal' />
+            <column-instance column='[Vehicle Type]' derivation='None' name='[none:Vehicle Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Booking Value]' derivation='Sum' name='[sum:Booking Value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ride Distance]' derivation='Sum' name='[sum:Ride Distance:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[sum:Ride Distance:qk]' field-type='quantitative' max='658019.20616923005' min='-4491.5986769230749' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[sum:Booking Value:qk]' field-type='quantitative' max='14678099' min='1040180' range-type='fixed' scope='rows' type='space' />
+            <format attr='width' field='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[sum:Booking Value:qk]' value='64' />
+            <format attr='height' field='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[sum:Ride Distance:qk]' value='25' />
+            <format attr='display' class='0' field='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[sum:Booking Value:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]' />
+              <text column='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[sum:Booking Value:qk]' />
+              <text column='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[sum:Ride Distance:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='599' />
+                <format attr='maxwidth' value='599' />
+                <format attr='minheight' value='590' />
+                <format attr='maxheight' value='590' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0jqvo261eamfqp144j6ee0cl2hm9].[sum:Booking Value:qk]</rows>
+        <cols>[federated.0jqvo261eamfqp144j6ee0cl2hm9].[sum:Ride Distance:qk]</cols>
+      </table>
+      <simple-id uuid='{7301E00A-7C8C-4338-B304-3D7CF3191FCE}' />
+    </worksheet>
+    <worksheet name='Bookings Cancelled by Driver'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000' fontsize='10'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ncr_ride_bookings' name='federated.0jqvo261eamfqp144j6ee0cl2hm9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0jqvo261eamfqp144j6ee0cl2hm9'>
+            <column datatype='string' name='[Booking ID]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Driver Cancellation Reason]' role='dimension' type='nominal' />
+            <column-instance column='[Booking ID]' derivation='Count' name='[cnt:Booking ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Driver Cancellation Reason]' derivation='None' name='[none:Driver Cancellation Reason:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Driver Cancellation Reason:nk]'>
+            <groupfilter function='member' level='[none:Driver Cancellation Reason:nk]' member='&quot;The customer was coughing/sick&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Driver Cancellation Reason:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#ffffff' />
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Driver Cancellation Reason:nk]' value='Driver Cancellation Reason'>
+              <formatted-text>
+                <run fontcolor='#ff0000'>Driver Cancellation Reason</run>
+              </formatted-text>
+            </format>
+            <format attr='background-color' value='#000000' />
+            <format attr='color' value='#ffffff' />
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Driver Cancellation Reason:nk]' value='#ffffff' />
+          </style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='quick-filter-title'>
+            <_.fcp.IndividualControlFormatting.true...format attr='font-family' field='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Driver Cancellation Reason:nk]' value='Tableau Book' />
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Driver Cancellation Reason:nk]' value='#666666' />
+            <_.fcp.IndividualControlFormatting.true...format attr='text-align' field='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Driver Cancellation Reason:nk]' value='left' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[cnt:Booking ID:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9F5E1625-5F6A-43D4-9A30-7C46F571C2B5}' />
+    </worksheet>
+    <worksheet name='Count of Bookings According Vehicle'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ncr_ride_bookings' name='federated.0jqvo261eamfqp144j6ee0cl2hm9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0jqvo261eamfqp144j6ee0cl2hm9'>
+            <column datatype='string' name='[Booking ID]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Vehicle Type]' role='dimension' type='nominal' />
+            <column-instance column='[Booking ID]' derivation='CountD' name='[ctd:Booking ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Vehicle Type]' derivation='None' name='[none:Vehicle Type:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[ctd:Booking ID:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[ctd:Booking ID:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]' />
+              <text column='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[ctd:Booking ID:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0jqvo261eamfqp144j6ee0cl2hm9].[ctd:Booking ID:qk]</rows>
+        <cols>[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]</cols>
+      </table>
+      <simple-id uuid='{9CE9756A-BB98-4E87-B7FC-51369F5C0B18}' />
+    </worksheet>
+    <worksheet name='Incomplete Bookings'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ncr_ride_bookings' name='federated.0jqvo261eamfqp144j6ee0cl2hm9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0jqvo261eamfqp144j6ee0cl2hm9'>
+            <column datatype='integer' name='[Incomplete Rides]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Vehicle Type]' role='dimension' type='nominal' />
+            <column-instance column='[Vehicle Type]' derivation='None' name='[none:Vehicle Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Incomplete Rides]' derivation='Sum' name='[pcto:sum:Incomplete Rides:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Incomplete Rides]' derivation='Sum' name='[sum:Incomplete Rides:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='756' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[sum:Incomplete Rides:qk]' />
+              <text column='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]' />
+              <text column='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[pcto:sum:Incomplete Rides:qk]' />
+              <color column='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D79CACB3-13EC-430D-960D-4F6E0406F671}' />
+    </worksheet>
+    <worksheet name='Monthwise Bookings'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ncr_ride_bookings' name='federated.0jqvo261eamfqp144j6ee0cl2hm9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0jqvo261eamfqp144j6ee0cl2hm9'>
+            <column datatype='string' name='[Booking ID]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Vehicle Type]' role='dimension' type='nominal' />
+            <column-instance column='[Booking ID]' derivation='Count' name='[cnt:Booking ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Booking ID]' derivation='CountD' name='[ctd:Booking ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Vehicle Type]' derivation='None' name='[none:Vehicle Type:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[ctd:Booking ID:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]' />
+              <text column='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[cnt:Booking ID:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0jqvo261eamfqp144j6ee0cl2hm9].[ctd:Booking ID:qk]</rows>
+        <cols>[federated.0jqvo261eamfqp144j6ee0cl2hm9].[mn:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{4D5701D0-70F3-4006-ADF2-239AD7D01CC9}' />
+    </worksheet>
+    <worksheet name='Ride Distance'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000' fontsize='10'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ncr_ride_bookings' name='federated.0jqvo261eamfqp144j6ee0cl2hm9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0jqvo261eamfqp144j6ee0cl2hm9'>
+            <column datatype='real' name='[Ride Distance]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Vehicle Type]' role='dimension' type='nominal' />
+            <column-instance column='[Vehicle Type]' derivation='None' name='[none:Vehicle Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Ride Distance]' derivation='Sum' name='[sum:Ride Distance:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Vehicle Type:nk]' member='&quot;Premier Sedan&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]' value='Vehicle Type'>
+              <formatted-text>
+                <run fontcolor='#ff0000'>Vehicle Type</run>
+              </formatted-text>
+            </format>
+            <_.fcp.IndividualControlFormatting.true...format attr='background-color' field='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]' value='#000000' />
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]' value='#ffffff' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-weight' field='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]' value='bold' />
+          </style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='quick-filter-title'>
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]' value='#666666' />
+            <_.fcp.IndividualControlFormatting.true...format attr='text-align' field='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]' value='left' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[sum:Ride Distance:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{6895B737-3C0A-4B60-B45E-3610AC9E8C64}' />
+    </worksheet>
+    <worksheet name='Sheet 10'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{EEB0E3F2-5EA3-44DE-9346-33A756C95A08}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ff0000'>Uber Ride Analysis</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#000000' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='ncr_ride_bookings' name='federated.0jqvo261eamfqp144j6ee0cl2hm9' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0jqvo261eamfqp144j6ee0cl2hm9'>
+        <column datatype='string' name='[Driver Cancellation Reason]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Vehicle Type]' role='dimension' type='nominal' />
+        <column-instance column='[Driver Cancellation Reason]' derivation='None' name='[none:Driver Cancellation Reason:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Vehicle Type]' derivation='None' name='[none:Vehicle Type:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98002' id='35' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
+            <zone h='6242' id='36' type-v2='title' w='99034' x='483' y='999'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='91760' id='33' param='horz' type-v2='layout-flow' w='99034' x='483' y='7241'>
+              <zone h='91760' id='24' param='vert' type-v2='layout-flow' w='99034' x='483' y='7241'>
+                <zone h='91760' id='16' param='horz' type-v2='layout-flow' w='99034' x='483' y='7241'>
+                  <zone h='91760' id='5' type-v2='layout-basic' w='99034' x='483' y='7241'>
+                    <zone h='43019' id='10' name='Booking Status Breakdown' w='33010' x='483' y='55982'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='43019' id='12' name='Incomplete Bookings' w='33013' x='66504' y='55982'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='40095' id='13' name='Booking Value According Vehicle' w='47795' x='483' y='15887'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='8646' id='14' name='Bookings Cancelled by Driver' w='17021' x='82496' y='7241'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='8646' id='18' name='Ride Distance' w='18168' x='30110' y='7241'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='8646' id='20' name='Avg Customer Ratings' w='17081' x='48278' y='7241'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='8646' id='19' mode='dropdown' name='Ride Distance' param='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]' type-v2='filter' w='15146' x='483' y='7241'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='8646' id='21' name='Avg Driver Ratings' w='14481' x='15629' y='7241'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='8646' id='17' mode='dropdown' name='Bookings Cancelled by Driver' param='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Driver Cancellation Reason:nk]' type-v2='filter' w='17137' x='65359' y='7241'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='43019' id='26' name='Count of Bookings According Vehicle' w='33011' x='33493' y='55982'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='40095' id='31' name='Monthwise Bookings' w='51239' x='48278' y='15887'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontalignment='1' fontcolor='#ff0000'>Uber Ride Analysis</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1900' minheight='1900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='48' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='47' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone h='6242' id='36' type-v2='title' w='99034' x='483' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='61' h='8646' id='21' is-fixed='true' name='Avg Driver Ratings' w='14481' x='15629' y='7241'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8646' id='19' mode='dropdown' name='Ride Distance' param='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]' type-v2='filter' w='15146' x='483' y='7241'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='61' h='8646' id='18' is-fixed='true' name='Ride Distance' w='18168' x='30110' y='7241'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='61' h='8646' id='20' is-fixed='true' name='Avg Customer Ratings' w='17081' x='48278' y='7241'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8646' id='17' mode='dropdown' name='Bookings Cancelled by Driver' param='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Driver Cancellation Reason:nk]' type-v2='filter' w='17137' x='65359' y='7241'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='61' h='8646' id='14' is-fixed='true' name='Bookings Cancelled by Driver' w='17021' x='82496' y='7241'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40095' id='13' is-fixed='true' name='Booking Value According Vehicle' w='47795' x='483' y='15887'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40095' id='31' is-fixed='true' name='Monthwise Bookings' w='51239' x='48278' y='15887'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43019' id='10' is-fixed='true' name='Booking Status Breakdown' w='33010' x='483' y='55982'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43019' id='26' is-fixed='true' name='Count of Bookings According Vehicle' w='33011' x='33493' y='55982'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43019' id='12' is-fixed='true' name='Incomplete Bookings' w='33013' x='66504' y='55982'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{26D99CD7-68D3-41E7-B080-6183FD8798CA}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Monthwise Bookings'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='vertical'>
+              <node-reference>
+                <axis>[federated.0jqvo261eamfqp144j6ee0cl2hm9].[ctd:Booking ID:qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Booking ID:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{95662E0E-ED84-4135-9EA0-EB6B5A024C50}' />
+    </window>
+    <window class='worksheet' name='Count of Bookings According Vehicle'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{63B5FF06-C1CD-4F0D-8B95-F6ABC9C2AA34}' />
+    </window>
+    <window class='worksheet' name='Booking Status Breakdown'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Booking Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{400A99FC-AC23-4949-9644-2D8D8FB1017B}' />
+    </window>
+    <window class='worksheet' name='Incomplete Bookings'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{E5BFF982-0686-44F4-A524-31F5E2533A0D}' />
+    </window>
+    <window class='worksheet' name='Booking Value According Vehicle'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{907FFB69-F8CD-415A-AEDB-9463CC66438A}' />
+    </window>
+    <window class='worksheet' name='Bookings Cancelled by Driver'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='185'>
+            <card mode='dropdown' param='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Driver Cancellation Reason:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{F6790B1F-8188-4D88-96BF-DB072E6F681D}' />
+    </window>
+    <window class='worksheet' name='Ride Distance'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{7349EC20-1971-4D1B-809C-5D9A30374F37}' />
+    </window>
+    <window class='worksheet' name='Avg Customer Ratings'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{D27C12ED-4FF2-4859-A406-445031116EE4}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Avg Driver Ratings'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.0jqvo261eamfqp144j6ee0cl2hm9].[none:Vehicle Type:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{13E1BA4D-8612-4013-8E87-A30F3A1EE38C}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Avg Customer Ratings'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Avg Driver Ratings'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Booking Status Breakdown'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Booking Value According Vehicle'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Bookings Cancelled by Driver'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Count of Bookings According Vehicle'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Incomplete Bookings' />
+        <viewpoint name='Monthwise Bookings'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Ride Distance'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{45E0A726-A528-446E-A36B-02BD25E00827}' />
+    </window>
+    <window class='worksheet' name='Sheet 10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{99E01BE9-ACC1-4C59-97DF-ABF036187DC5}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Avg Customer Ratings' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAC9klEQVR4nO3WoU5kSxRA0dMEHArRoQUCARKFx2HQGH4Czz/xOag2oElIOkEhuKNmLM88
+      CNlruRJVOZXUTmq1LMsyELU/M3N9fT0vLy8/PQt8u/2Zmefn59lutz89C3y7vZ8eAH6SAEgT
+      AGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQ
+      JgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkC
+      IE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDS
+      BECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0A
+      pAmANAGQJgDSBECaAEgTAGkCIE0ApAmAX+Xw8HAeHh7+rdfr9dzf38/p6enc3d3N2dnZXF1d
+      ze3t7eztff28BcCvcnl5OU9PT//WFxcXs91u5/j4eB4fH2ez2czb29scHBzM5+fnl+cJgF9j
+      tVrN+/v7HB0dzWazmZOTk9ntdrNer2e3283Nzc28vr7O0dHRfHx8zP7+/tdnLsuynJ+fz3a7
+      /YYrwP9ntVrNsiyzt7c3y7LMsixf7vk6Efgl/j74//L1+csXiDQBkCYA0gRAmgBIEwBpAiBN
+      AKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRA
+      mgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJ
+      gDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBI
+      EwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQB
+      kCYA0v4A5IJJ9GPmU8MAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Avg Driver Ratings' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAC6UlEQVR4nO3ToU4rShRA0VO4sgYCCZhKHCg0kgSPQvAhfCeoGlBoSGvb5659mAshey03
+      Yk7OJLMX+/1+PxD1Z2bm9vZ23t7efnoX+HZ/ZmZeX19nvV7/9C7w7Q5+egH4SQIgTQCkCYA0
+      AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMA
+      aQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAm
+      ANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIg
+      TQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIE
+      QJoASBMAaQIgTQCkCYA0AZAmAH6V5XI5T09Pf883Nzfz8PAwq9Vq7u7u5urqau7v7+fy8vJL
+      8wTAr3J9fT0vLy9/z8/Pz7Pdbuf9/X2Wy+VsNpvZbrdzcnLypXkC4NdYLBaz2Wzm+Ph4zs/P
+      5+zsbB4fH+fz83NWq9V8fHzM6enpbLfbOTo6msPDw/+fud/v9xcXF7Ner7/hCfDvHBwczG63
+      m8ViMfv9/mt3/vFO8G12u93MzJc//4wAiBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCk
+      CYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoA
+      SBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0
+      AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMA
+      aQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIg7T9IDUccYTZb
+      6QAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Booking Status Breakdown' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Booking Value According Vehicle' width='192'>
+      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
+      k7zz0Rn+G2/2oVbg8AZGAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Bookings Cancelled by Driver' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAADFElEQVR4nO3XsUpdSxSA4XXEysCpBSuLIFhaxdbGxs7e58h7+QQ2EhBSR06hJI+gIIi4
+      UwfuLa4XovB/H0wzxZ7V/Mzs1bIsy0DU9szM6enp3N/fv/Mo8Pdtz8zc3d3NZrN571ngr9t6
+      7wHgPQmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDS
+      BECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0A
+      pAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECa
+      AEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmA
+      NAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBEDa9nsPAP9mb29vLi4u5vr6eq6urubLly9z
+      cnIyDw8Ps7OzM4+Pj3NzczPn5+fz9evXWZblP5/hBuDDOj4+nufn59nd3Z2ZmW/fvs1ms5nL
+      y8t5eXmZmZkfP37Mr1+/3nyGAPiwvn//Pk9PT7Ner+fs7GzW6/Vsb2/P/f39/Pz5cz59+jRH
+      R0ezv78/h4eHbztkWZbl8+fPy8xY1odbW1tby2q1Wg4ODv7YX61Wy2q1+t/f9w/Ah/b6+joz
+      M7e3t3/sv+W9/088gUgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECa
+      AEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmA
+      NAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgT
+      AGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQ
+      JgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIO039J4PXymKylQAAAAASUVORK5C
+      YII=
+    </thumbnail>
+    <thumbnail height='192' name='Count of Bookings According Vehicle' width='192'>
+      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
+      QmCC
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAD6ElEQVR4nO3au6ulVwGH4Xcyo0GiKdSgMWAQEpuATRBNYS1aiBDw1iUW1hZiI5jOUvwX
+      LO0kkiIWCiEYiFh4JSGll8JCi1FTjNFijeQkpBmYkDn+nqfa32Gfxd6w3r3XXuu7Uv0nGHXX
+      O/0C4J0kAKYJgGkCYJoAuJTedeHx1c5EfrB63y2OIwAupW9eePyZ6tHqU9WHb3Gca7ftFcEd
+      4CvVv6ufVb+ovlQ9UL1SPV19rrqnerX6Sb4B+D/zo+p71eerj3Ym+/erh6v3Vl+t/tKZ/CUA
+      LqkrvT5539351K96rXOy+4/q/s7vgserv3eWO7+tnr8wjgC4lH5Zfb36SPXZ6uWbf3+oeqwT
+      wu+ru6tfVX/uLHve7EpuheCSerR6pPppZ1nz/uoTnU/1n3ci+FD16eoPnUgeqP50YQwBMM0S
+      iGkCYJoAmHbXW11cuXB97S2eePebBrmakricrlZP/e/iqeqf1Sc7+6f3Vk9Uf6y+WN3obDt9
+      7ebzX+vce/HDTih/6/zqfqj6QOfg4WOdX+hwJ3rDrRB/rb5c/a6zt/pS9a/qyc63wiPVDzqT
+      +zvVb6pvV7/uHDN/tzPZP1i9pxPQPZ3j6Rtv+1uBW/eGAJ6pvlE919kvfbFzePBgZ6/0vurj
+      nQn/aq+fqL1y8/p69Wz1rZv/e72zNDL5uVPdtnOAa9UXqh93llAv3I5B4W3mIIxpNm+YJgCm
+      CYBpAmCaAJgmAKYJgGkCYJoAmCYApgmAaQJgmgCYJgCmCYBpAmCaAJgmAKYJgGkCYJoAmCYA
+      pgmAaQJgmgCYJgCmCYBpAmCaAJgmAKYJgGkCYJoAmCYApgmAaQJgmgCYJgCmCYBpAmCaAJgm
+      AKYJgGkCYJoAmCYApgmAaQJgmgCYJgCmCYBpAmCaAJgmAKYJgGkCYJoAmCYApgmAaQJgmgCY
+      JgCmCYBpAmCaAJgmAKYJgGkCYJoAmCYApgmAaQJgmgCYJgCmCYBpAmCaAJgmAKYJgGkCYJoA
+      mCYApgmAaQJgmgCYJgCmCYBpAmCaAJgmAKYJgGkCYJoAmCYApgmAaQJgmgCYJgCmCYBpAmCa
+      AJgmAKYJgGkCYJoAmCYApgmAaQJgmgCYJgCmCYBpAmCaAJgmAKYJgGkCYJoAmCYApgmAaQJg
+      mgCYJgCmCYBpAmCaAJgmAKYJgGkCYJoAmCYApgmAaQJgmgCYJgCmCYBpAmCaAJgmAKYJgGkC
+      YJoAmCYApgmAaQJgmgCYJgCmCYBpAmCaAJgmAKYJgGkCYJoAmCYApgmAaQJgmgCYJgCmCYBp
+      AmCaAJgmAKYJgGkCYJoAmCYApgmAaQJgmgCYJgCm/RdZmE3gbsBHOwAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Incomplete Bookings' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Monthwise Bookings' width='192'>
+      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
+      WgcDU3H6Ar8Bw6Xy41V4frkAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Ride Distance' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAADYElEQVR4nO3XsWpVWRSA4XWvCpekEAIKgkQsUoTrA1hZ+r6p0/gE2tiENIkgKEggKCkC
+      eqYYCKMzznTG4f8+2LBhHTa7+TnnrJZlWQai7s7MvHz5cs7Pz2/7LvDL3Z2ZOTs7m9PT09u+
+      C/xy69u+ANwmAZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAm
+      ANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIg
+      TQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIE
+      QJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCk
+      CYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASLt72xeA//Lo0aM5PDycmZnNZjP3
+      79+fV69ezXa7nd3d3Tk6OprtdjuHh4fz5s2befz48Tx8+HDevn07T58+ndevX8+HDx/+8Wxv
+      AH57Hz9+nJ2dnbm+vp4vX77M8fHx7O3tzfv37+fTp08z82cYnz9/noODg7m4uJh79+7Ns2fP
+      5urqah48ePDTswXAb+/JkydzeXk5m81mNpvNPH/+fNbr9bx48WKurq5mu93O2dnZrFarOT09
+      nb29vbm+vp6Tk5NZrVazu7v788OXZVkODg6WmbGs33bduXPnZr9er7+b7e/vLzOzrFarm/lf
+      9/92rn8A/he+fv16s//27dt3s3fv3s3MzLIsf5v/+OyPfAKRJgDSBECaAEgTAGkCIE0ApAmA
+      NAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgT
+      AGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQ
+      JgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkC
+      IE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDS
+      BEDaH2OSInOF5bDUAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 10' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
